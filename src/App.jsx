@@ -12,6 +12,7 @@ export const App = () => {
       lat: position.coords.latitude,
       long: position.coords.longitude
     })
+    console.log(coordinates);
     }, (error) => {
       console.log(error);
     })
