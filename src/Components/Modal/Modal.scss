@@ -1,0 +1,26 @@
+
+.modal {
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(207, 201, 194, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+
+        width: 80%;
+        aspect-ratio:  1 / 1;
+        background-color: rgb(61, 61, 104);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}

@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     padding: 0px;
+    margin:0px;
 }
 
 .app {
@@ -11,13 +12,32 @@
     &__top {
         background-color:rgb(240, 239, 238);
         width: 100%;
-        height: 50%;
+        height: 10%;
+        display: flex;
+    }
+
+    &__location {
+        width: 100%;
+        align-self: flex-end;
+        text-align: center;
+        color: rgb(61, 61, 104);
+        font-size: 3.5rem;
+        margin-bottom: -0.75rem;
+    }
+
+    &__name {
+        width: 100%;
+        align-self: flex-end;
+        text-align: center;
+        color: rgb(61, 61, 104);
+        font-size: 3.3rem;
+        margin-bottom: -0.5rem;
     }
 
     &__bottom {
         background-color: rgb(61, 61, 104);
         width: 100%;
-        height: 50%;
+        height: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;

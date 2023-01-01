@@ -1,0 +1,11 @@
+.temperature {
+
+    &__degrees {
+        grid-area: temperature;
+        align-self: center;
+        justify-self: center;
+        font-size: 1.8rem;
+        color: rgb(240, 239, 238);
+    }
+
+}
