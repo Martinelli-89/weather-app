@@ -1,0 +1,29 @@
+.error {
+
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+        ". . close"
+        ". error ."
+        ". . .";
+
+    &__close {
+        grid-area: close;
+        width: 100%;
+        aspect-ratio: 1 / 1;  
+        justify-self: center;
+    }
+
+    &__info {
+        grid-area: error;
+        justify-self: center;
+        align-self: center;
+        color:rgb(240, 239, 238);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}
