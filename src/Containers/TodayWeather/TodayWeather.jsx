@@ -1,15 +1,14 @@
 import { useState } from "react";
 import Switch from "../../Components/Switch/Switch";
+import Button from "../../Components/Button/Button";
 import WeatherCard from "../../Components/WeatherCard/WeatherCard";
 import "./TodayWeather.scss";
 
-const TodayWeather = ({weatherData}) => {
+const TodayWeather = ({weatherData, handleClick}) => {
 
     const [isCelsius, setIsCelsius] = useState(true);
 
     const toggleTemperature = (e) => {
-        console.log(e.target);
-        console.log(e.target.classList.contains("active"));
         if(!e.target.classList.contains("active")) {
             setIsCelsius(!isCelsius);
         }
@@ -25,6 +24,7 @@ const TodayWeather = ({weatherData}) => {
             </div>
             <div className="today__options">
                 <Switch isCelsius={isCelsius} toggleTemperature={toggleTemperature}/>
+                <Button text="Change location" handleClick={handleClick} />
             </div>
         </section>
 

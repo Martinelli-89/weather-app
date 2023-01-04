@@ -47,7 +47,7 @@ export const App = () => {
     loadModal();
   }
 
-  const loadModal = () => {
+  const loadModal = () => { console.log("modal");
     if(error) {
       setError(null);
     }
@@ -65,7 +65,7 @@ export const App = () => {
         <section className='app__bottom'>
           {!weather && <Button text={"Use current location"} handleClick={getCurrentLocation}/>}
           {!weather && <Button text={"Search location"} handleClick={loadModal}/>}
-          {weather && <TodayWeather weatherData={weather} />}
+          {weather && <TodayWeather weatherData={weather} handleClick={loadModal} />}
         </section>
         {modal && !error && <Modal content={"search"} searchLocation={searchLocation} close={loadModal}/>}
         {error && !modal && <Modal content={"error"} message={error} close={loadModal}/>}
